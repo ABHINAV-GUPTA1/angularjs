@@ -1,2 +1,2 @@
 # angularjs
-angularCodes
+angularCodes Practice

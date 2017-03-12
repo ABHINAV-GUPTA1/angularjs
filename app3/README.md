@@ -1,1 +1,1 @@
-Project 3
+Angular app 3

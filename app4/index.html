@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp4">
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <div ng-controller="controller1 as con">
+		<div  ng-repeat="arr in con.name.split('') track by $index">
+			arr[{{$index}}] ={{arr}}
+		</div>
+		
+		<table>
+		<thead>
+			<tr>
+				<td>Name</td>
+				<td>Email</td>
+				<td>Phone</td>
+				<td>status</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="object in con.arr">
+				<td ng-bind="object.name"></td>
+				<td ng-bind="object.email"></td>
+				<td ng-bind="object.phone"></td>
+				<td ng-bind="object.status"></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	
+  </body>
+
+</html>
